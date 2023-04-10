@@ -15,7 +15,7 @@ request = requests.get(url)
 content = request.json()
 
 # Access the article titles and description
-body = ""
+body = " "
 for article in content["articles"][:20]:
     if article["title"] is not None:
         body = "Subject: Today's news" \
